@@ -20,11 +20,11 @@ import setuptools
 
 setuptools.setup(
     name="src",
-    version="",
-    author="",
-    author_email="",
-    description="",
-    url="",
+    version="v1.0.0",
+    author="Edward Amor",
+    author_email="edward.amor3@gmail.com",
+    description="Custom functions for customer churn data science project",
+    url="https://github.com/Skellet0r/customer-churn",
     packages=setuptools.find_packages(),
-    install_requires=[],
+    install_requires=["pandas", "numpy", "scikit-learn", "xgboost", "imblearn",],
 )
