@@ -2,10 +2,7 @@
 
 The original, immutable data dump.
 
+| Raw Dataset Name | Link to the Full Dataset   | Full Dataset Size (MB)  |
+| ---:| ---: | ---: |
+| Raw Dataset 1 | [link](data.csv) | 1 |
 
-| Raw Dataset Name | Link to the Full Dataset   | Full Dataset Size (MB)  | Link to Report |
-| ---:| ---: | ---: | ---: |
-| Raw Dataset 1 | [link](link/to/full/dataset1) | 2,000 | [Raw Dataset 1 Report](link/to/report1)|
-| Raw Dataset 2 | [link](link/to/full/dataset2) | 300 | [Raw Dataset 2 Report](link/to/report2)|
-
-If the link to the full dataset does not apply, provide some information on how to access the full dataset. 
