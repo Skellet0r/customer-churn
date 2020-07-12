@@ -1,2 +1,3 @@
 # install the current project
 -e .
+imblearn
