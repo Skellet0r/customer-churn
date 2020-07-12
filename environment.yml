@@ -1,0 +1,8 @@
+name: 
+channels:
+  - defaults
+dependencies:
+    pip
+  - pip:
+    - -r file:requirements.txt
+
