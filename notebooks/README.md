@@ -7,4 +7,7 @@
 5. [Naive Bayes Modeling](05-Skellet0r-naive-bayes.ipynb)
 6. [Decision Tree Modeling](06-Skellet0r-decision-tree.ipynb)
 7. [Random Forest Modeling](07-Skellet0r-random-forest.ipynb)
+8. [Random Forest Boosting Modeling](08-Skellet0r-random-forest-boosting.ipynb)
+9. [Support Vector Classifier Modeling](09-Skellet0r-svc.ipynb)
+10. [Benchmark Baseline Models](10-Skellet0r-benchmark-baseline.ipynb)
 
