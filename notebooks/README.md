@@ -1,5 +1,9 @@
 # Jupyter Notebooks
 
-When we use notebooks in our work, we often subdivide the notebooks folder. For example, `notebooks/exploratory` contains initial explorations, whereas `notebooks/reports` is more polished work that can be exported as html to the reports directory.
+1. [Data Cleaning](01-skellet0r-data-cleaning.ipynb)
+2. [Data Preprocessing](02-Skellet0r-preprocessing.ipynb)
+3. [Logistic Regression Modeling](03-Skellet0r-logistic-regression.ipynb)
+4. [K-Nearest Neighbors Modeling](04-Skellet0r-knn.ipynb)
+5. [Naive Bayes Modeling](05-Skellet0r-naive-bayes.ipynb)
+6. [Decision Tree Modeling](06-Skellet0r-decision-tree.ipynb)
 
-Follow a naming convention that shows the owner and the order the analysis was done in. We use the format `<step>-<ghuser>-<description>.ipynb` (e.g., `0.3-bull-visualize-distributions.ipynb`).
