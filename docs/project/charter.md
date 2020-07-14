@@ -38,9 +38,10 @@
   - Naive Bayes
   - Decision Trees
   - Random Forest
-  - Gradient Boosting
+    - Bagging
+    - Adaboost
+    - Gradient Boosting
     - XGBoost
-  - Adaboost
   - SVM
     - Linear
     - Radial
