@@ -6,4 +6,5 @@
 4. [K-Nearest Neighbors Modeling](04-Skellet0r-knn.ipynb)
 5. [Naive Bayes Modeling](05-Skellet0r-naive-bayes.ipynb)
 6. [Decision Tree Modeling](06-Skellet0r-decision-tree.ipynb)
+7. [Random Forest Modeling](07-Skellet0r-random-forest.ipynb)
 
