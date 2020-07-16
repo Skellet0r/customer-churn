@@ -1,6 +1,6 @@
 # Jupyter Notebooks
 
-All jupyter notebooks used for this project are contained in this directory. The format for each file is <#>-<gh-author>-<description>.
+All jupyter notebooks used for this project are contained in this directory.
 
 Notebooks:
 
