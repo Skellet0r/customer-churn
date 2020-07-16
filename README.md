@@ -31,7 +31,7 @@ The presentation delivered to stakeholders for this project can be found [here](
   you first create the environment, and any changes automagically appear.
 - [Environment](environment.yml): this is a conda environment.yml file, which allows
   one to consistently reproduce the same clean working environment.
-- [Presenation](docs/project/presentation.pdf): the presentation delivered to stakeholders.
+- [Presenation](https://Skellet0r.github.io/customer-churn): the presentation delivered to stakeholders.
 
 ## Quick Start
 
