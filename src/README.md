@@ -1,1 +1,1 @@
-Source code for use in this project. Mainly `*.py` files/scripts.
+Custom helper functions created to expedite tedious tasks.
