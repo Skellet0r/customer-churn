@@ -1,64 +1,88 @@
-# Exit Report of Project <X> for Customer <Y>
+# Exit Report of Project 'Customer Churn Classification' for Customer SyriaTel
 
-Instructions: Template for exit criteria for data science projects. This is concise document that includes an overview of the entire project, including details of each stage and learning. If a section isn't applicable (e.g. project didn't include a ML model), simply mark that section as "Not applicable". Suggested length between 5-20 pages. Code should mostly be within code repository (not in this document).
+Customer: SyriaTel
 
-Customer: <Enter Customer Name\>
-
-Team Members: <Enter team member' names. Please also enter relevant parties names, such as team lead, Account team, Business stakeholders, etc.\>
+Team Members: Edward Amor
 
 ##	Overview
 
-<Executive summary of entire solution, brief non-technical overview\>
+To identify customers who will soon stop doing business with SyriaTel, a classification model was generated. The generated model has an accuracy of over 90% in tests, and
+utilizes many decision trees (a series of if-else branches) which vote on whether a customer will soon leave.
 
 ##	Business Domain
-<Industry, business domain of customer\>
+
+Our client is in the telecommunications industry, and as such provides phone service plans to customers. Our client offers PAYG (Pay As You Go) or pre-paid plans to customers,
+in which the customer pays for their minutes at a pre-defined rate.
 
 ##	Business Problem
-<Business problem and exact use case(s), why it matters\>
+
+Our client currently is seeing a sizeable portion of their clients ending their service plan and switching to a new service provider. The bottom line is
+our client is seeing profits diminish over time as their clients are consistently leaving, and they have no way of identifying accurately whether a client will soon
+stop their service plan.
 
 ##	Data Processing
-<Schema of original datasets, how data was processed, final input data schema for model\>
 
-##	Modeling, Validation
-<Modeling techniques used, validation results, details of how validation conducted\>
+Original Dataset Schema:
 
-##	Solution Architecture
-<Architecture of the solution, describe clearly whether this was actually implemented or a proposed architecture. Include diagram and relevant details for reproducing similar architecture. Include details of why this architecture was chosen versus other architectures that were considered, if relevant\>
+- state
+- account length
+- area code
+- phone number
+- international plan
+- voice mail plan
+- number vmail messages
+- total day minutes
+- total day calls
+- total day charge
+- total eve minutes
+- total eve calls
+- total eve charge
+- total night minutes
+- total night calls
+- total night charge
+- total intl minutes
+- total intl calls
+- total intl charge
+- customer service calls
+- churn
 
-##	Benefits
-	
-###	Company Benefit (internal only. Double check if you want to share this with your customer)
-<What did our company gain from this engagement? ROI, revenue,  etc\>
+Processing of the data involved encoding the state feature into multiple columns, dropping the phone number column, binarizing the international plan & voice mail plan features,
+and then scaling the data into a z score.
 
-###	Customer Benefit
-What is the benefit (ROI, savings, productivity gains etc)  for the customer? If just POC, what is estimated ROI? If exact metrics are not available, why does it have impact for the customer?\>
+## Modeling, Validation
 
-##	Learnings
+Validating our model started first by separating 25% of our processed data as a final testing set, our data was randomly split and stratified to make sure 
+class sizes maintained the same. Throughout the modeling phase, 10 fold stratified cross validation was implemented during training to verify metrics.
 
-### 	Project Execution
-<Learnings around the customer engagement process\>
+## Benefits
+
+###	Client Benefits
+
+Exact savings are not available but based on testing we can see that there is a consistent accuracy of over 90%. Our model in testing shows that it can identify approx. 80%
+of customers who will soon end their service plan with SyriaTel.
+
+## Learnings
 
 ### Data science / Engineering
-<Learnings related to data science/engineering, tips/tricks, etc\>
 
-
-### Domain
-<Learnings around the business domain, \>
-
-
-### Product
-<Learnings around the products and services utilized in the solution \>
+- Pickling models after long running processes allows you to continue them in a new notebook. Reduces the amount of time required to restart and run all cells in a notebook.
+- Having an environment.yml allows you to use services like nbviewer and binder.
 
 ###	What's unique about this project, specific challenges
-<Specific issues or setup, unique things, specific challenges that had to be addressed during the engagement and how that was accomplished\>
 
-##	Links
-<Links to published case studies, etc.; Link to git repository where all code sits\>
+One issue was identifying which metric to focus on and optimize, if you focus solely on recall, your precision will fall, and if you focus on precision recall suffers.
+Depending on which metric you choose your decision threshold changes. Using metrics like AUC and F Measure, it's easier to compare models and also tune them in a more
+holistic way.
 
+Another issue was run time of modeling, some methods of optimizing models such as GridSearchCV, which is an exhaustive search of a parameter space can take a very long time
+if one doesn't smartly choose a good parameter space. It's also very important to split up work into separate notebooks so that the cost of running a notebook isn't as great.
 
 ##	Next Steps
  
-<Next steps. These should include milestones for follow-ups and who 'owns' this action. E.g. Post- Proof of Concept check-in on status on 12/1/2016 by X, monthly check-in meeting by Y, etc.\>
+ Next steps for this project include:
 
-## Appendix
-<Other material that seems relevant – try to keep non-appendix to <20 pages but more details can be included in appendix if needed\>
+ - Removing correlated features and analyzing the effect on models
+ - Further reducing the feature set
+ - Analyzing the baseline performance of different classifiers with a smaller feature set.
+ - Exploring more hyper parameters
+
