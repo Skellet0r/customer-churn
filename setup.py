@@ -26,5 +26,5 @@ setuptools.setup(
     description="Custom functions for customer churn data science project",
     url="https://github.com/Skellet0r/customer-churn",
     packages=setuptools.find_packages(),
-    install_requires=["pandas", "numpy", "scikit-learn", "xgboost", "imblearn",],
+    install_requires=["pandas", "numpy", "scikit-learn", "xgboost", "imblearn", "matplotlib", "seaborn",],
 )
