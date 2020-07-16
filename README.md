@@ -6,6 +6,8 @@ This is a classification project, aiming to predict which customers will soon en
 This has a large business value to our client as their customer churn rate is above 14%, and lowering that rate means
 more profit.
 
+The presentation delivered to stakeholders for this project can be found [here](https://Skellet0r.github.io/customer-churn).
+
 ## Components
 
 - [Charter](docs/project/charter.md): the project charter was the first step when
@@ -29,6 +31,7 @@ more profit.
   you first create the environment, and any changes automagically appear.
 - [Environment](environment.yml): this is a conda environment.yml file, which allows
   one to consistently reproduce the same clean working environment.
+- [Presenation](docs/project/presentation.pdf): the presentation delivered to stakeholders.
 
 ## Quick Start
 
