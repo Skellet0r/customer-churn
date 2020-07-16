@@ -59,6 +59,14 @@ Note:
 
 --
 
+## Benchmarks
+
+<div class="r-stretch">
+  <img src="visuals/05-imbalanced-training-benchmark-baseline.png">
+</div>
+
+--
+
 ## Model Top 5 Features
 
 <div class="r-stretch">
@@ -85,7 +93,13 @@ Note:
 
 ### Recommendation
 
-Add new service plans and/or incentives for customers. <!-- .element: style="font-size: xx-large;" -->
+For our client we recommend that they add prepaid plans to their service options.
+Adding a prepaid option would allow customers to pay a lower rate by bulk buying their
+minutes for the month. This would reduce the charge customers incur, and keep them
+satisified. <!-- .element: style="font-size: x-large;" -->
+
+Increasing support documentation and training for support representatives. <!-- .element: style="font-size: x-large;" -->
+
 
 Note:
 
@@ -95,6 +109,11 @@ more dissatisfied, and seek a service provider who can provide a better rate.
 
 Moving away from a flat rate model, or even providing prepaid service plans would
 allow customers to pay a lower rate for the minutes by buying them in bulk.
+
+There must be a reason why customers have to reach out to support. And repeated calls
+give the inclination that something is consistently wrong. Increasing support docs and training
+for support representatives would allow support technicians to better handle and suppress the issues
+that have arised for customers.
 
 ---
 
