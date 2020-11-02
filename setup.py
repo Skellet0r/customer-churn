@@ -19,7 +19,7 @@ https://github.com/conda/conda/blob/54e4a91d0da4d659a67e3097040764d3a2f6aa16/tes
 import setuptools
 
 setuptools.setup(
-    name="src",
+    name="customersrc",
     version="v1.0.0",
     author="Edward Amor",
     author_email="edward.amor3@gmail.com",
